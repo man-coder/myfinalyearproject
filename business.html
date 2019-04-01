@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     
+    <link rel="stylesheet" type="text/css" href="iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="util.css">
+	<link rel="stylesheet" type="text/css" href="loggin.css">
+	
+	 <link rel="stylesheet" href="modal.css">
+   
+    
+    <link rel="stylesheet" href="news.css">
+    <title>Bscit - news</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  
+  <a class="navbar-brand" href="index.html"><img width="50px"  height="50px" src="https://res.cloudinary.com/h3av7f1l3s/image/upload/v1546109158/Bscit-logo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="newnews.html">TOP HEADLINE(INDIA)</a>
+          <a class="dropdown-item" href="newstopheadlines.html">TOP HEADLINES</a>
+          </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="technology.html">Technology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Sports.html">Sports</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="entertainment.html">Entertainment</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="business.html">Business <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="health.html">Health</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="science.html">Science</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="twitters.html">Twitter</a>
+      </li>
+    
+     <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+    </ul>
+  </div>
+  </nav>
+  
+    <div class="container text-center">
+           <br/>
+            <h1 class="text-center text-white">Business</h1>
+              <div id="profile1"></div>
+      
+      <div id="profile"></div>
+
+    </div><!-- /.container -->
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  
+  
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!-- <script src="js/main.js"></script>-->
+   <script>
+$(document).ready(function(){
+   // $("#Search").keyup(function(e){
+//var num=e.target.value;
+//console.log(num);
+$.ajax({
+
+ url:'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=93374cfac5ea463b81ffcd88a7403c05',
+
+    }).done(function(data){
+       console.log(data);
+    for(var i=0;i<data.articles.length;i++){
+       $('#profile1').append(`
+          <div class="container" >
+
+   <div class="card gred " style="margin-top:30px;padding:20px 25px 20px 25px; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);position:relative; >
+<div class="card-body text-center">
+    <h3 class="card-title">Title:${data.articles[i].title}</h3>
+    <p> <img class='card-img-top' style='border-radius:20px' src="${data.articles[i].urlToImage}"></p>
+         
+             
+            <h3 class="blockquote-footer">Author:${data.articles[i].author}</h3>
+               <hr> 
+    
+            <p class="card-text">Description:${data.articles[i].description}</p>
+ <p class="card-text">Description:${data.articles[i].publishedAt}</p>
+
+
+
+<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn center-block" style="margin:0px auto;" onclick='window.location.href=${data.articles[i].url}' name="btn-login">
+								Read More
+							</button>
+						</div>
+
+					</div>
+
+            </div>
+
+
+      </div>
+
+
+
+    </div>
+      
+`);
+
+
+       }
+      });    
+     
+    });
+     </script>
+  </body>
+</html>

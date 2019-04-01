@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: ufrl('poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('poppins/Poppins-SemiBold.ttf'); 
+}
+
+nav
+{
+    background-image: url(https://res.cloudinary.com/h3av7f1l3s/image/upload/v1546109166/menui.png);
+    color: #fff;
+    font-weight: bolder;
+
+
+        z-index: 1;
+        position: absolute;
+       
+    }
+
+body
+{
+      background: -webkit-linear-gradient(bottom,#00bfff,#FF69B4);
+  background: -o-linear-gradient(bottom,#00bfff,#FF69B4);
+  background: -moz-linear-gradient(bottom,#00bfff,#FF69B4);
+  background: linear-gradient(bottom,#00bfff,#FF69B4);
+  background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins-Bold', sans-serif;
+
+}
+
+.gred,.mid
+{
+         background-color: -webkit-linear-gradient(bottom,#00bfff,#FF69B4);
+  background-color: -o-linear-gradient(bottom,#00bfff,#FF69B4);
+  background-color: -moz-linear-gradient(bottom,#00bfff,#FF69B4);
+  background-color: linear-gradient(bottom,#00bfff,#FF69B4);
+  background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins-Bold', sans-serif;
+   
+
+}

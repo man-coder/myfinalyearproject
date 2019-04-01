@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="utils.css">
+	<link rel="stylesheet" type="text/css" href="mains.css?version=15">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="submit3.php" method="post">
+				<span class="contact100-form-title">
+					Smt. Chandibai Himathmal Mansukhani College, Ulhasnagar-03
+				</span>
+
+				<h3 class="text-center">Feedback Analysis Sheet</h3>
+
+				<h4 class="text-center">Fill form for Fifth teacher </h4>
+
+				<div class="wrap-input100 validate-input" data-validate="Department is required">
+					<span class="label-input100">Department</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your department">
+					<span class="focus-input100"></span>
+				</div>
+
+<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Name of the teacher</span>
+					<input class="input100" type="text" name="tname" placeholder="Enter teacher's name">
+					<span class="focus-input100"></span>
+				</div>
+
+
+          <!--  <div class="wrap-input100 validate-input" data-validate="Semester is required">
+					<span class="label-input100">Semester</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your semester">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Year is required">
+					<span class="label-input100">Year</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your year">
+					<span class="focus-input100"></span>
+				</div>
+-->
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Enter semester</span>
+					<div>
+						<select class="selection-2" name="service">
+							<option>Choose semester</option>
+							<option>Sem 1</option>
+							<option>Sem 2</option>
+							<option>Sem 3</option>
+							<option>Sem 4</option>
+							<option>Sem 5</option>
+						    <option>Sem 6</option>
+
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Enter Year</span>
+					<div>
+						<select class="selection-2" name="budget">
+							<option>Choose year</option>
+							<option>First year</option>
+							<option>Second year</option>
+							<option>Third year</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<p class="text-danger">Note: Please rate the teacher on the following attributes on a scale </p>
+
+				<p class="text-dark">4-Very Good, 3-Good, 2-Satisfactory, 1-Below Satisfactory</p>
+
+				<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Sr.No</th>
+      <th scope="col">Attributes of the Teacher</th>
+      <th scope="col">Very Good</th>
+      <th scope="col">Good</th>
+      <th scope="col">Satisfactory</th>
+      <th scope="col">Below Satisfactory</th>
+
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+      <th scope="row">1</th>
+      <td>Teacher encourages students to ask doubts outside the class</td>
+      <td> <div class="radio-item"><input type="radio" id="item4" value="4" name="doubts"><label for="item4">4</label></div></td>
+      <td><div class="radio-item"><input type="radio" id="item3" value="3" name="doubts"><label for="item3">3</label></div></td>
+      <td><div class="radio-item"><input type="radio" id="item2" value="2" name="doubts"><label for="item2">2</label></div></td>
+      <td><div class="radio-item"><input type="radio" id="item1" value="1" name="doubts"><label for="item1">1</label></div></td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Teacher motivates the student to go for higher studies, competitive exams or career development</td>
+			<td> <div class="radio-item"><input type="radio" id="high4" value="4" name="higher"><label for="high4">4</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="high3" value="3" name="higher"><label for="high3">3</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="high2" value="2" name="higher"><label for="high2">2</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="high1" value="1" name="higher"><label for="high1">1</label></div></td>
+     </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Teacher recommends students Learning material other than text book: (Youtube videos, documentaries, reference books, journals etc)</td>
+			<td> <div class="radio-item"><input type="radio" id="book4" value="4" name="book"><label for="book4">4</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="book3" value="3" name="book"><label for="book3">3</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="book2" value="2" name="book"><label for="book2">2</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="book1" value="1" name="book"><label for="book1">1</label></div></td>
+     </tr>
+       <tr>
+      <th scope="row">4</th>
+      <td>Teacher is punctual and regular in the class
+       </td>
+			 <td> <div class="radio-item"><input type="radio" id="rclass4" value="4" name="rclass"><label for="rclass4">4</label></div></td>
+ 			<td><div class="radio-item"><input type="radio" id="rclass3" value="3" name="rclass"><label for="rclass3">3</label></div></td>
+ 			<td><div class="radio-item"><input type="radio" id="rclass2" value="2" name="rclass"><label for="rclass2">2</label></div></td>
+ 			<td><div class="radio-item"><input type="radio" id="rclass1" value="1" name="rclass"><label for="rclass1">1</label></div></td>
+     </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Teacher effectively communicates the topic during lecture</td>
+			<td> <div class="radio-item"><input type="radio" id="comm4" value="4" name="comm"><label for="comm4">4</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="comm3" value="3" name="comm"><label for="comm3">3</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="comm2" value="2" name="comm"><label for="comm2">2</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="comm1" value="1" name="comm"><label for="comm1">1</label></div></td>
+     </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Teacher uses examples to explain the topics</td>
+      <<td> <div class="radio-item"><input type="radio" id="exm4" value="4" name="exm"><label for="exm4">4</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="exm3" value="3" name="exm"><label for="exm3">3</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="exm2" value="2" name="exm"><label for="exm2">2</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="exm1" value="1" name="exm"><label for="exm1">1</label></div></td>
+     </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Teacher uses ICT tools other than chalk and board to deliver the lecture</td>
+			<td> <div class="radio-item"><input type="radio" id="chalk4" value="4" name="chalk"><label for="chalk4">4</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="chalk3" value="3" name="chalk"><label for="chalk3">3</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="chalk2" value="2" name="chalk"><label for="chalk2">2</label></div></td>
+			<td><div class="radio-item"><input type="radio" id="chalk1" value="1" name="chalk"><label for="chalk1">1</label></div></td>
+     </tr>
+
+
+  </tbody>
+</table>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Suggestions if any:</span>
+					<textarea class="input100" name="message" placeholder="Your suggestions here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" id="test" name="test" value="RUN">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			<div style="text-align:center;margin-top:40px;">
+		<span class="mystep"></span>
+		<span class="mystep1"></span>
+		<span class="mystep1"></span>
+		<span class="mystep1"></span>
+</div>
+			</form>
+
+			<br>
+
+			<nav aria-label="...">
+  <ul class="pagination pagination-lg">
+    <!-- <li class="page-item ">
+      <a class="page-link" href="feedback.html" tabindex="-1">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="feedback2.html" tabindex="-2">2</a></li>
+    <li class="page-item"><a class="page-link" href="feedback3.html" tabindex="-3">3</a></li>
+    <li class="page-item"><a class="page-link" href="feedback4.html" tabindex="-4" tabindex="-4">4</a></li>
+    <li class="page-item"><a class="page-link" href="feedback5.html" tabindex="-5" tabindex="-5">5</a></li> -->
+
+  </ul>
+</nav>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
